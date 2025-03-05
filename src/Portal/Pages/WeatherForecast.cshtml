@@ -1,0 +1,15 @@
+﻿@page
+@model WeatherForecastModel
+@{
+    ViewData["Title"] = "Weather forecast page";
+}
+
+<h2>Weather Forecasts</h2>
+
+<dl class="dl-horizontal">
+    @foreach (var forecast in Model.WeatherForecasts)
+    {
+        <dt title="@forecast.Summary">@forecast.Summary</dt>
+        <dd id="forecast-@String.Format("{0}", forecast.Summary)">@forecast.TemperatureC</dd>
+    }
+</dl>
