@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using Okta.AspNetCore;
-using IdentityModel.Client;
 using ConfigurationManager = System.Configuration.ConfigurationManager;
 using Microsoft.AspNetCore.Mvc.Routing;
 using System.Configuration;
